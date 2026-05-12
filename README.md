@@ -21,12 +21,12 @@ Here I created two ssh key pairs using the command:
     ssh-keygen -t ed25519 -f "~/.ssh/key_file_name"
 ```
 Explanation
-- ssh-keygen
+- ssh-keygen:
     I used this command to generate SSH authentication keys.
-- -t
+- -t:
     This option specifies the type of cryptographic algorithm to use for the key pair.
     In this project, I used the ed25519 algorithm.
-- -f
+- -f:
     This option specifies the filename and storage location for the generated key files.
 
 After running the command, SSH generated:
@@ -46,9 +46,9 @@ After sucessfully creating the two new ssh key pairs, I copied the PUBLIC keys f
 ```
 
 Explanation
-- ssh-copy-id
+- ssh-copy-id:
     I used this command to copy a local public SSH key to the remote server.
-- -i
+- -i:
     This option specifies the identity file (public key) that should be copied.
 
 
@@ -61,9 +61,9 @@ After copying the public keys to the remote server, I tested passwordless SSH lo
 ```
 
 Explanation
-- -i
+- -i:
     I used this option to specify which private key file should be used for authentication.
-- -o IdentitiesOnly=yes
+- -o IdentitiesOnly=yes:
     I added this option to ensure that SSH used only the specified private key instead of automatically trying previously loaded SSH keys from the SSH agent or default SSH configurations.
 
 This verification step helped me confirm that:
