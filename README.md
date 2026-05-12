@@ -17,9 +17,9 @@ For this project, a Linux Mint host computer and a virtual Ubuntu Server operati
 PHASE1 - Generate ssh key pairs in host machine
 
 Here I created two ssh key pairs using the command:
-'''bash 
+```bash 
     ssh-keygen -t ed25519 -f "~/.ssh/key_file_name"
-'''
+```
 Explanation
 - ssh-keygen
     I used this command to generate SSH authentication keys.
@@ -41,9 +41,9 @@ server
 
 After sucessfully creating the two new ssh key pairs, I copied the PUBLIC keys from the path "~/.shh" by using the command
 
-'''bash 
+```bash 
     ssh-copy-id -i ~/.ssh/public_key_file username@server-ip
-'''
+```
 
 Explanation
 - ssh-copy-id
@@ -56,9 +56,9 @@ PHASE3 - Verify passwordless SSH login
 
 After copying the public keys to the remote server, I tested passwordless SSH login using the following command:
 
-'''bash 
+```bash 
     ssh -o IdentityOnly=yes -i ~/.ssh/private_key_file username@server-ip
-'''
+```
 
 Explanation
 - -i
