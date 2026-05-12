@@ -31,8 +31,8 @@ Explanation
 
 After running the command, SSH generated:
 
-A private key
-A corresponding public key
+- A private key 
+- A corresponding public key
 
 The generated key files were stored inside the ~/.ssh directory
 
