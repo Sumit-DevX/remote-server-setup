@@ -12,7 +12,7 @@ For this project, a Linux Mint host computer and a virtual Ubuntu Server operati
 ## REMOTE SERVER
 - Ubuntu Server running on Virtual Box
 
-## Procdures
+## Procedures
 
 PHASE1 - Generate ssh key pairs in host machine
 
